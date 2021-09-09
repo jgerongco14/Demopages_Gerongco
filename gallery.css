@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+    background-color:wheat;
+    padding-top: 10%;
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background: black;
+    box-shadow: 0 5px 10px black;
+    padding: 0px 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color:white;
+}
+
+header .nav_links ul {
+    list-style: none;
+}
+
+header .nav_links ul li {
+    position: relative;
+    float: left;
+}
+
+header .nav_links ul li a {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+header .nav_links ul li a:hover {
+    background: gray;
+    transition: 0.80s;
+}
+
+header .nav_links ul li ul {
+    position: absolute;
+    left: none;
+    width: 120px;
+    background: lightgrey ;
+}
+
+#submenu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#submenu li a {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.nav ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+
+button {
+    height: 60px;
+    width: 300px;
+    background-color: teal;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: tomato;
+}
+
+img {
+    height: 300px;
+    width: 400px;
+    margin-bottom: 38px;
+    margin-left: -360px;
+    margin-right: 100px;
+    border-radius: 10px;
+}
+
+div nav ul {
+    text-align: center;
+    padding-left: 110px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
