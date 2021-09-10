@@ -74,9 +74,11 @@ header .nav_links ul li ul {
 
 
 .nav ul li {
-    position: relative;
+    position: block;
+    margin: auto;
     list-style: none;
     display: inline-block;
+    padding-left: 20pxx;
 }
 
 button {
@@ -96,14 +98,15 @@ img {
     height: 300px;
     width: 400px;
     margin-bottom: 38px;
-    margin-left: -360px;
-    margin-right: 100px;
+    margin-left: -300px;
     border-radius: 10px;
 }
 
 div nav ul {
     text-align: center;
+    background-color: red;
 }
+
 
 h1 {
     text-align: center;
