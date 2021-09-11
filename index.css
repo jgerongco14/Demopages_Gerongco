@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
     text-transform: capitalize;
     text-decoration: none;
 }
@@ -53,6 +53,7 @@ header .nav_links ul li a:hover {
     background: gray;
     transition: 0.80s;
 }
+
 
 header .nav_links ul li ul {
     position: absolute;
@@ -145,4 +146,12 @@ h3 {
 footer {
     justify-content: space-between;
     padding: 0px 110px;
+}
+
+.inner .in {
+    display: flex;
+    float: left;
+    width: 50px;
+    height: 50px;
+    flex-direction: row;
 }

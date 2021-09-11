@@ -13,13 +13,13 @@ body {
 
 .outer {
     background-color: white;
-    width: 65%;
+    width: 70%;
     margin: auto;
     border-radius: 10px;
 }
 
 .inner {
-    width: 70%;
+    width: 75%;
     margin: auto;
     border-radius: 20px;
 }

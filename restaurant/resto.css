@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(resto/wood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    background-color: #080808;
+    
+}
+
+.box {
+    text-align: center;
+}
+
+.boxes {
+    display: inline-block;
+    background-color:#141414;
+    padding-bottom: 50px;
+    padding: 0px 30px;
+    border-radius: 10px;
+}
+
+.box .boxes img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.box .boxes label {
+    font-weight: bold;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.out {
+    background-color: transparent;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+}
+
+.in {
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.count {
+    display: inline-block;
+}
+
+.name .count .input {
+    height: 40px;
+    width: 100%;
+    position: relative;
+    padding-top: 20px;
+}
+
+.name .count .input input {
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.name .count .input label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    pointer-events: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.count .input input:focus ~ label,
+.count .input input:valid ~ label {
+    transform: translateY(-23px);
+    color: green;
+}
+
+.check {
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px;
+    
+}
+
+
+.check input {
+    width: 30px;
+    height: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.but {
+    text-align: center;
+    padding: 50px;
+ }
+ 
+ .but input {
+     font-size: 20px;
+     font-family: 'Arial';
+     font-weight: bold;
+     height: 40px;
+     width: 150px;
+     border-radius: 10px;
+     background-color: white;
+     transition: 0.5s;
+     
+ }
+ 
+ .but input:hover {
+     background-color: red;
+     color: white;
+ }
+ 
+
+ form h1 {
+    display: flex;
+    margin: auto;
+     padding: 30px;
+ }
+
+p {
+     padding: 10px; 
+     font-size: 20px;
+     font-weight: bold;
+     color: white;
+ }
+
+form .checkbox label{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+label {
+    color: white;
+}
+form {
+    padding: 50px;
+}
+
+h2 {
+    padding: 50px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
