@@ -129,6 +129,13 @@ img {
     align-items:center;
     height: 350px;
     width: 100%;
+    background-color: yellow;
+}
+
+.gallery .des {
+    width: 50%;
+    height: 80%;
+    text-align: center;
 }
 
 .gallery input{
