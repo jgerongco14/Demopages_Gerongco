@@ -11,6 +11,26 @@ body {
     background-color:black;
 }
 
+#another {
+	float: left;
+	height: 10px;
+    width: 10px;
+}
+
+#another nav ul {
+    float: left;
+    padding-top: 200px;
+    padding-left: 20px;
+}
+
+#another nav ul li {
+    height: 50px;
+    width: 50px;
+    display: flex;
+	flex: left;
+    padding: 5px;
+}
+
 header {
     position: relative;
     top: 0;
@@ -26,11 +46,6 @@ header {
     box-shadow: 10px 0px 20px 10px whitesmoke;
 }
 
-header .logo {
-    font-weight: bolder;
-    font-size: 25px;
-    color:white;
-}
 
 header .nav_links ul {
     list-style: none;
@@ -54,6 +69,10 @@ header .nav_links ul li a:hover {
     transition: 0.80s;
 }
 
+a img {
+    height: 55px;
+    width: 100px;
+}
 
 header .nav_links ul li ul {
     position: absolute;
@@ -153,5 +172,4 @@ footer {
     float: left;
     width: 50px;
     height: 50px;
-    flex-direction: row;
 }

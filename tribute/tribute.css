@@ -11,14 +11,12 @@ html {
 }
 
 body {
-    margin: 0px;
     background-color:blueviolet;
-    padding-top: 5%;
 }
 
 header {
-    position: fixed;
-    top: 0%;
+    position: relative;
+    top: 0;
     left: 0%;
     right: 0%;
     background: black;
@@ -28,6 +26,7 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+    box-shadow: 10px 0px 20px 10px whitesmoke;
 }
 
 header .logo {
@@ -56,6 +55,11 @@ header .nav_links ul li a {
 header .nav_links ul li a:hover {
     background: gray;
     transition: 0.80s;
+}
+
+a img {
+    height: 55px;
+    width: 100px;
 }
 
 header .nav_links ul li ul {
@@ -126,6 +130,7 @@ h1 {
     font-size: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
+    padding-top: 20px;
 }
 
 h2 {

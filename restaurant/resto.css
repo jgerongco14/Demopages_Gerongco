@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: Arial;
-    text-transform: capitalize;
     text-decoration: none;
 }
 
@@ -58,6 +57,10 @@ header .nav_links ul li a:hover {
     transition: 0.80s;
 }
 
+a img {
+    height: 55px;
+    width: 100px;
+}
 
 header .nav_links ul li ul {
     position: absolute;
@@ -102,7 +105,7 @@ header .nav_links ul li ul {
 }
 
 .outer {
-    padding-top: 70px;
+    padding-top: 100px;
 }
 
 .in {
@@ -259,7 +262,7 @@ section {
     gap: 5rem;
     min-height: 100px;
     align-items: center; 
-    height: 100vh;
+    height: 85vh;
 }
 
 
@@ -286,4 +289,10 @@ section {
     background-color: tomato;
     padding: 15px;
     color: white;
+    transition: 0.8s;
+}
+
+.home .desc a:hover {
+    background-color: white;
+    color: black;
 }

@@ -8,13 +8,12 @@
 
 body {
     margin: 0px;
-    background-color:wheat;
-    padding-top: 7%;
+    background-color:white;
 }
 
 header {
-    position: fixed;
-    top: 0%;
+    position: relative;
+    top: 0;
     left: 0%;
     right: 0%;
     background: black;
@@ -24,12 +23,7 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-}
-
-header .logo {
-    font-weight: bolder;
-    font-size: 25px;
-    color:white;
+    box-shadow: 10px 0px 20px 10px black;
 }
 
 header .nav_links ul {
@@ -52,6 +46,11 @@ header .nav_links ul li a {
 header .nav_links ul li a:hover {
     background: gray;
     transition: 0.80s;
+}
+
+a img {
+    height: 55px;
+    width: 100px;
 }
 
 header .nav_links ul li ul {
@@ -80,18 +79,6 @@ header .nav_links ul li ul {
     padding:30px;
 }
 
-button {
-    height: 60px;
-    width: 300px;
-    background-color: teal;
-    font-size: 15px;
-    font-weight: bold;
-    border-radius: 10px;
-}
-
-button:hover {
-    background-color: tomato;
-}
 
 div nav ul {
     text-align: center;
@@ -129,7 +116,10 @@ img {
     align-items:center;
     height: 350px;
     width: 100%;
-    background-color: yellow;
+}
+
+.thumbnailImage:hover {
+    transform: scale(1.07);
 }
 
 .gallery .des {
@@ -158,7 +148,6 @@ img {
     opacity: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     transition: opacity 0.50s ease-out;
 }
 
@@ -175,12 +164,14 @@ img {
 
 .thumbnailImage {
     margin: 0 5px;
+    transition: 0.8s;
 }
 
 .thumbnailImage img {
     width: 100%;
     height: 120px;
     object-fit: cover;
+    box-shadow: 0px 10px 20px black;
 }
 
 .thumbnailImage:first-child {
@@ -215,10 +206,6 @@ img {
     opacity: 1;
 }
 
-#c7:checked + #i7 {
-    opacity: 1;
-}
-
 h1 {
     font-size: 50px;
 }
@@ -237,4 +224,61 @@ img {
         width: 100%;
         margin: 0;
     }
+}
+
+
+.des {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding:20px;
+}
+
+.des p {
+    text-align: justify;
+    padding: 20px;
+}
+
+.box h1 {
+    font-size: 50px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.des h3 {
+    font-size: 30px;
+    padding: 20px;
+}
+
+.des img {
+    height: 400px;
+    width: 700px;
+    box-shadow: 0px 20px 30px black;
+}
+
+.gallery img {
+    box-shadow: 0px 10px 20px black;
+}
+
+.box {
+    border-color: black;
+    width: 80%;
+    margin: auto;
+    background-color: wheat;
+}
+
+.bot {
+    text-align: center;
+    padding:30px;
+}
+
+button {
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: black;
+    color: wheat;
 }
