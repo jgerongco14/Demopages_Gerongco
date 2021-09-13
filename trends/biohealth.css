@@ -267,14 +267,15 @@ img {
     background-color: wheat;
 }
 
+
 .bot {
     text-align: center;
-    padding:30px;
+    padding-bottom: 40px;
 }
 
 button {
     height: 50px;
-    width: 80px;
+    width: 150px;
     border-radius: 10px;
 }
 

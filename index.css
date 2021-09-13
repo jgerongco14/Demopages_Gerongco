@@ -24,8 +24,8 @@ body {
 }
 
 #another nav ul li {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     display: flex;
 	flex: left;
     padding: 5px;
