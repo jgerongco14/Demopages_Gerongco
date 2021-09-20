@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,140 +11,182 @@ html {
 }
 
 body {
-    background-color:blueviolet;
-}
-
-header {
+    margin: 0;
+    background-color: #082742;
     position: relative;
-    top: 0;
-    left: 0%;
-    right: 0%;
-    background: black;
-    box-shadow: 0 5px 10px black;
-    padding: 0px 2%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-    box-shadow: 10px 0px 20px 10px whitesmoke;
 }
 
-header .logo {
-    font-weight: bolder;
-    font-size: 25px;
-    color:white;
-}
-
-header .nav_links ul {
-    list-style: none;
-}
-
-header .nav_links ul li {
-    position: relative;
-    float: left;
-}
-
-header .nav_links ul li a {
-    font-size: 15px;
-    font-weight: bold;
-    padding: 20px;
-    color: white;
-    display: block;
-}
-
-header .nav_links ul li a:hover {
-    background: gray;
-    transition: 0.80s;
-}
-
-a img {
-    height: 55px;
-    width: 100px;
-}
-
-header .nav_links ul li ul {
-    position: absolute;
-    left: none;
-    width: 120px;
-    background: lightgrey ;
-}
-
-#submenu {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-#submenu li a {
-    font-size: 12px;
-    font-weight: bold;
-}
-
-
-.nav ul li {
-    position: relative;
-    list-style: none;
-    display: inline-block;
-}
-
-.mem1 img {
-    height: 250px;
-    width: 350px;
-}
-
-section {
-    height: 65vh;
-    max-height: 800px;
-    display: flex;
-}
-
-.content {
-    background-color: palevioletred;
-    justify-content: center;
-    padding: 0px 50px;
-    position: block;
+nav {
+    height: 100px;
+    width: 80%;
     margin: auto;
-    width: 70%;
-    min-width: 950px;
-    max-height: 350px;
+}
+
+label.logo {
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bolder;
+    background-color: white;
     border-radius: 10px;
-    transition: 0.6s;
+    color: #082742;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    box-shadow: 0px 10px 30px #242526;
 }
 
-.content:hover {
-    box-shadow: 0 15px 20px black;
+nav ul {
+    float: right;
+    margin-right: 20px;
 }
 
-.mem1 {
-    display: flex;
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
 }
 
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
 
-.content h2 {
-    text-align: center;
-    padding-top: 20px;
+nav ul li a:hover {
+    background-color: #0f4c81;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #2c3e50;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 20px;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+    a:hover {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.c1 {
+    align-items: center;
+    color: whitesmoke;
 }
 
 h1 {
     text-align: center;
-    font-size: 60px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-    padding-top: 20px;
-}
-
-h2 {
-    font-size: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-    color:white;
 }
 
 p {
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: -50px;
-    margin-top: -18px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes {
+    transition: 0.6s;
+}
+
+.boxes:hover {
+    box-shadow: 0 0px 30px white;
+    transform: scale(1.1);
+}
+
+.menu {
+    box-shadow: 0 0px 30px white;
+    border-radius: 10px;
+    padding: 50px 0px;
+    width: 90%;
+    margin: auto;
+}
+
+.box {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxes {
+    background-color: #0d3e69;
+    border-radius: 10px;
+    width: 500px;
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+}
+
+.box .boxes img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.box .boxes label {
+    display: flex;
+}
+
+.con {
+    padding-left: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.content {
+    padding: 20px;
 }
 
 .bts {
@@ -159,21 +201,19 @@ p {
     padding-bottom: 50px;
 }
 
-
 .container h4 {
     width: 80%;
     margin: auto;
 }
 
 .container img {
-   width: 80%;
-   height: 80%;
+    width: 80%;
+    height: 80%;
 }
 
 .box {
-    background-color: blueviolet;
+    background-color: #041421;
 }
-
 
 h3 {
     padding: 10px 80px;
@@ -182,14 +222,29 @@ h3 {
     text-transform: none;
 }
 
-
 .achievemnts {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: wheat;
+    background-color: #0f4c81;
     width: 80%;
     margin: auto;
     border-radius: 20px;
+}
+
+.image {
+    text-align: center;
+}
+
+.achievemnts h1 {
+    text-align: center;
+}
+
+.image img {
+    height: 300px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid rgb(82, 10, 82);
 }
 
 footer {
@@ -200,42 +255,42 @@ footer {
 
 footer h3 {
     text-align: center;
+    color: white;
 }
 
 .inner {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: wheat;
+    background-color: #18558a;
     width: 80%;
     margin: auto;
     border-radius: 20px;
 }
+
 .ach {
     padding: 20px;
+}
+
+.inner h1 {
+    text-align: center;
 }
 
 .outer {
     padding: 20px;
 }
 
-img {
-    border-radius: 20px;
-}
-
-.image {
-    text-align: center;
-}
-
-.image img {
-    width: 80%;
-    height: 100%;
-}
-
 .vid {
     text-align: center;
-    color: violet;
     font-weight: bolder;
     padding-top: 20px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: rgb(6, 31, 92);
 }
 
 h6 {
